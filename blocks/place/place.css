@@ -1,0 +1,34 @@
+.place {
+  font-family: 'Inter', Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-rows: auto;
+  row-gap: 48px;
+  column-gap: 40px;
+}
+
+.place:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 1124px) {
+  .place {
+    row-gap: 48px;
+    column-gap: 32px;
+  }
+}
+
+@media screen and (max-width: 984px) {
+  .place {
+    row-gap: 48px;
+    column-gap: 28px;
+    margin: 0 24px;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .place {
+    row-gap: 32px;
+    margin: 0;
+  }
+}
