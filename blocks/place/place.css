@@ -1,7 +1,7 @@
 .place {
   font-family: 'Inter', Arial, sans-serif;
   display: grid;
-  grid-template-columns: min-content max-content;
+  grid-template-columns: min-content minmax(min-content, max-content);
   grid-template-rows: auto;
   row-gap: 48px;
   column-gap: 40px;
@@ -20,7 +20,13 @@
 @media screen and (max-width: 984px) {
   .place {
     column-gap: 28px;
-    margin: 0 24px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .place {
+    grid-template-columns: repeat(1, auto);
   }
 }
 
@@ -28,6 +34,5 @@
   .place {
     row-gap: 32px;
     margin: 0;
-    grid-template-columns: repeat(1, 320px);
   }
 }
