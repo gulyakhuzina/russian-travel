@@ -1,5 +1,6 @@
 .photo-grid__item {
   max-width: 284px;
+  line-height: 0;
 }
 
 @media screen and (max-width: 1124px) {

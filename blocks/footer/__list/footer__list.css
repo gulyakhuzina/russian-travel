@@ -5,12 +5,12 @@
   flex-direction: row;
   column-gap: 18px;
   list-style: none;
-  margin-bottom: 48px;
 }
 
 @media screen and (max-width: 720px) {
   .footer__list {
     flex-direction: column;
     row-gap: 32px;
+    margin: 0 0 48px;
   }
 }
